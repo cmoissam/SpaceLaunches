@@ -20,6 +20,6 @@ struct LaunchDetailsViewModel {
         self.name = launch.missionName
         self.description = launch.details ?? ""
         self.creationDate = launch.formattedDate
-        self.videoLink = URL(string: "https://www.youtube.com/embed/\(launch.links.youtubeID)")
+        self.videoLink = URL(string: "https://www.youtube.com/embed/\(launch.youtubeId)")
     }
 }

@@ -17,7 +17,7 @@ struct LaunchsApi: LaunchsApiProtocol {
     enum Path: String {
         case launches = "/v2/launches"
     }
-
+    
     func getLaunchs(
         completion: @escaping RequestCompletion<[Launch]>
     ) {

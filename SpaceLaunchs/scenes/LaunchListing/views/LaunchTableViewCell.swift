@@ -120,6 +120,6 @@ struct LaunchCellViewModel {
         launch: Launch
     ) {
         title = launch.missionName
-        smallImageUrl = launch.links.missionPatchSmall
+        smallImageUrl = launch.missionPatchSmall
     }
 }
