@@ -23,7 +23,10 @@ class SharedAppDependencies: SharedRootContainer {
     }
     
     func makeLaunchsListViewController(coordinator: AppRoutingLogic) -> UIViewController {
-        UIViewController()
+        LaunchsListViewController(
+            interactor: LaunchsListInteractor(launchsService: launchsService),
+            coordinator: coordinator
+        )
     }
 
     func makeLaunchDetailsViewController(launch: Launch) -> UIViewController {
