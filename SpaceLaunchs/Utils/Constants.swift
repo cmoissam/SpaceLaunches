@@ -14,6 +14,11 @@ enum Localizable {
         static let noData = "Aucun lancement trouver, veuillez réessayer plus tard"
         static let apiError = "Une erreure est survenu, veuillez appuyer sur « refresh » pour réessayer"
     }
+
+    enum LaunchDetailsViewController {
+        static let title = "Lancement"
+        static let descriptionText = "Description"
+    }
 }
 
 enum AppFont {

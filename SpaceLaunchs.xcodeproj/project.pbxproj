@@ -35,6 +35,9 @@
 		DAC979A425C591C70079BCF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC979A325C591C70079BCF1 /* Constants.swift */; };
 		DAC979A925C592D70079BCF1 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC979A825C592D70079BCF1 /* Observable.swift */; };
 		DAC979AE25C593970079BCF1 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC979AD25C593970079BCF1 /* UIImageView+Cache.swift */; };
+		DAC979CD25C5ACD00079BCF1 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC979CC25C5ACD00079BCF1 /* LaunchDetailsViewController.swift */; };
+		DAC979D525C5ACDC0079BCF1 /* LaunchDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC979D425C5ACDC0079BCF1 /* LaunchDetailsInteractor.swift */; };
+		DAC979DA25C5ACE70079BCF1 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC979D925C5ACE70079BCF1 /* LaunchDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		DAC979A325C591C70079BCF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAC979A825C592D70079BCF1 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		DAC979AD25C593970079BCF1 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		DAC979CC25C5ACD00079BCF1 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewController.swift; sourceTree = "<group>"; };
+		DAC979D425C5ACDC0079BCF1 /* LaunchDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsInteractor.swift; sourceTree = "<group>"; };
+		DAC979D925C5ACE70079BCF1 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +242,7 @@
 		DAC9798925C590C80079BCF1 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DAC979CB25C5ACBC0079BCF1 /* LaunchDetails */,
 				DAC9798A25C590D90079BCF1 /* LaunchListing */,
 			);
 			path = scenes;
@@ -258,6 +265,16 @@
 				DAC9799E25C5913B0079BCF1 /* LaunchTableViewCell.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		DAC979CB25C5ACBC0079BCF1 /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DAC979CC25C5ACD00079BCF1 /* LaunchDetailsViewController.swift */,
+				DAC979D425C5ACDC0079BCF1 /* LaunchDetailsInteractor.swift */,
+				DAC979D925C5ACE70079BCF1 /* LaunchDetailsViewModel.swift */,
+			);
+			path = LaunchDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,13 +420,16 @@
 				DAC979AE25C593970079BCF1 /* UIImageView+Cache.swift in Sources */,
 				DAC9794325C588180079BCF1 /* Resource.swift in Sources */,
 				DAC9798225C58EB00079BCF1 /* LaunchsService.swift in Sources */,
+				DAC979D525C5ACDC0079BCF1 /* LaunchDetailsInteractor.swift in Sources */,
 				DAC978C425C57D370079BCF1 /* AppDelegate.swift in Sources */,
 				DAC9799A25C5912C0079BCF1 /* LaunchsListViewModel.swift in Sources */,
 				DAC9799525C5911E0079BCF1 /* LaunchsListInteractor.swift in Sources */,
 				DAC9790F25C5809E0079BCF1 /* Date+Extensions.swift in Sources */,
+				DAC979DA25C5ACE70079BCF1 /* LaunchDetailsViewModel.swift in Sources */,
 				DAC9795A25C588630079BCF1 /* LaunchsApi.swift in Sources */,
 				DAC9798D25C591120079BCF1 /* LaunchsListViewController.swift in Sources */,
 				DAC9799F25C5913B0079BCF1 /* LaunchTableViewCell.swift in Sources */,
+				DAC979CD25C5ACD00079BCF1 /* LaunchDetailsViewController.swift in Sources */,
 				DAC979A425C591C70079BCF1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,6 +30,10 @@ class SharedAppDependencies: SharedRootContainer {
     }
 
     func makeLaunchDetailsViewController(launch: Launch) -> UIViewController {
-        UIViewController()
+        LaunchDetailsViewController(
+            interactor: LaunchDetailsInteractor(
+                viewModel: LaunchDetailsViewModel(launch: launch)
+            )
+        )
     }
 }
