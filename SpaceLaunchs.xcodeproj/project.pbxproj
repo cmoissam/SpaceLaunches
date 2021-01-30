@@ -25,6 +25,8 @@
 		DAC9795A25C588630079BCF1 /* LaunchsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9795925C588630079BCF1 /* LaunchsApi.swift */; };
 		DAC9795F25C589A80079BCF1 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9795E25C589A80079BCF1 /* NetworkManagerTests.swift */; };
 		DAC9796725C58A3A0079BCF1 /* LaunchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9796625C58A3A0079BCF1 /* LaunchApiTests.swift */; };
+		DAC9797425C58DFF0079BCF1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9797325C58DFF0079BCF1 /* AppCoordinator.swift */; };
+		DAC9797C25C58E0D0079BCF1 /* SharedAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9797B25C58E0D0079BCF1 /* SharedAppDependencies.swift */; };
 		DAC9798225C58EB00079BCF1 /* LaunchsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9798125C58EB00079BCF1 /* LaunchsService.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		DAC9795925C588630079BCF1 /* LaunchsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchsApi.swift; sourceTree = "<group>"; };
 		DAC9795E25C589A80079BCF1 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		DAC9796625C58A3A0079BCF1 /* LaunchApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchApiTests.swift; sourceTree = "<group>"; };
+		DAC9797325C58DFF0079BCF1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DAC9797B25C58E0D0079BCF1 /* SharedAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAppDependencies.swift; sourceTree = "<group>"; };
 		DAC9798125C58EB00079BCF1 /* LaunchsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				DAC9798025C58E820079BCF1 /* service */,
+				DAC9797225C58DCE0079BCF1 /* coordinator */,
 				DAC9794125C587EB0079BCF1 /* api */,
 				DAC9790825C5806D0079BCF1 /* Utils */,
 				DAC978FF25C57FED0079BCF1 /* model */,
@@ -191,6 +196,15 @@
 				DAC9795925C588630079BCF1 /* LaunchsApi.swift */,
 			);
 			path = api;
+			sourceTree = "<group>";
+		};
+		DAC9797225C58DCE0079BCF1 /* coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9797325C58DFF0079BCF1 /* AppCoordinator.swift */,
+				DAC9797B25C58E0D0079BCF1 /* SharedAppDependencies.swift */,
+			);
+			path = coordinator;
 			sourceTree = "<group>";
 		};
 		DAC9798025C58E820079BCF1 /* service */ = {
@@ -332,10 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC9797425C58DFF0079BCF1 /* AppCoordinator.swift in Sources */,
 				DAC9792D25C581B30079BCF1 /* Links.swift in Sources */,
 				DAC9795025C5883C0079BCF1 /* NetworkError.swift in Sources */,
 				DAC978C825C57D370079BCF1 /* ViewController.swift in Sources */,
 				DAC9790125C5802C0079BCF1 /* Launch.swift in Sources */,
+				DAC9797C25C58E0D0079BCF1 /* SharedAppDependencies.swift in Sources */,
 				DAC9794B25C5882A0079BCF1 /* NetworkManager.swift in Sources */,
 				DAC9795525C5884E0079BCF1 /* HTTPMethod.swift in Sources */,
 				DAC9794325C588180079BCF1 /* Resource.swift in Sources */,

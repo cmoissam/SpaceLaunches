@@ -15,7 +15,7 @@ enum LaunchsServiceError: Error {
     case noData
 }
 
-/// Result of listing service call
+/// Result of Launchs service call
 enum LaunchsServiceResult {
     case failure(_ error: LaunchsServiceError)
     case success(launchs: [Launch])
@@ -32,7 +32,7 @@ class LaunchsService: LaunchsServiceProtocol {
         self.launchsApi = launchsApi
     }
     
-    /// getRemoteData: get data of advertisements and categories from api
+    /// getRemoteData: get data of Launchs from api
     /// - Parameter completion: The completion block that is executed when the service finishes.
     ///
     public func getRemoteData(
