@@ -11,8 +11,13 @@
 		DAC978C825C57D370079BCF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC978C725C57D370079BCF1 /* ViewController.swift */; };
 		DAC978CD25C57D380079BCF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC978CC25C57D380079BCF1 /* Assets.xcassets */; };
 		DAC978D025C57D380079BCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC978CE25C57D380079BCF1 /* LaunchScreen.storyboard */; };
-		DAC978DB25C57D380079BCF1 /* SpaceLaunchsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC978DA25C57D380079BCF1 /* SpaceLaunchsTests.swift */; };
 		DAC978E625C57D380079BCF1 /* SpaceLaunchsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC978E525C57D380079BCF1 /* SpaceLaunchsUITests.swift */; };
+		DAC9790125C5802C0079BCF1 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9790025C5802C0079BCF1 /* Launch.swift */; };
+		DAC9790F25C5809E0079BCF1 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9790E25C5809E0079BCF1 /* Date+Extensions.swift */; };
+		DAC9791725C580EB0079BCF1 /* ModelDecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9791625C580EB0079BCF1 /* ModelDecodeTest.swift */; };
+		DAC9791D25C581470079BCF1 /* LaunchNilData.json in Resources */ = {isa = PBXBuildFile; fileRef = DAC9791C25C581470079BCF1 /* LaunchNilData.json */; };
+		DAC9792525C581600079BCF1 /* LaunchData.json in Resources */ = {isa = PBXBuildFile; fileRef = DAC9792425C581600079BCF1 /* LaunchData.json */; };
+		DAC9792D25C581B30079BCF1 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9792C25C581B30079BCF1 /* Links.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +45,16 @@
 		DAC978CF25C57D380079BCF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAC978D125C57D380079BCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC978D625C57D380079BCF1 /* SpaceLaunchsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceLaunchsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAC978DA25C57D380079BCF1 /* SpaceLaunchsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceLaunchsTests.swift; sourceTree = "<group>"; };
 		DAC978DC25C57D380079BCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC978E125C57D380079BCF1 /* SpaceLaunchsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceLaunchsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC978E525C57D380079BCF1 /* SpaceLaunchsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceLaunchsUITests.swift; sourceTree = "<group>"; };
 		DAC978E725C57D380079BCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC9790025C5802C0079BCF1 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		DAC9790E25C5809E0079BCF1 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		DAC9791625C580EB0079BCF1 /* ModelDecodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDecodeTest.swift; sourceTree = "<group>"; };
+		DAC9791C25C581470079BCF1 /* LaunchNilData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LaunchNilData.json; sourceTree = "<group>"; };
+		DAC9792425C581600079BCF1 /* LaunchData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LaunchData.json; sourceTree = "<group>"; };
+		DAC9792C25C581B30079BCF1 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,8 @@
 		DAC978C225C57D370079BCF1 /* SpaceLaunchs */ = {
 			isa = PBXGroup;
 			children = (
+				DAC9790825C5806D0079BCF1 /* Utils */,
+				DAC978FF25C57FED0079BCF1 /* model */,
 				DAC978C325C57D370079BCF1 /* AppDelegate.swift */,
 				DAC978C725C57D370079BCF1 /* ViewController.swift */,
 				DAC978CC25C57D380079BCF1 /* Assets.xcassets */,
@@ -107,7 +119,8 @@
 		DAC978D925C57D380079BCF1 /* SpaceLaunchsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DAC978DA25C57D380079BCF1 /* SpaceLaunchsTests.swift */,
+				DAC9791B25C580F40079BCF1 /* mocks */,
+				DAC9791625C580EB0079BCF1 /* ModelDecodeTest.swift */,
 				DAC978DC25C57D380079BCF1 /* Info.plist */,
 			);
 			path = SpaceLaunchsTests;
@@ -120,6 +133,32 @@
 				DAC978E725C57D380079BCF1 /* Info.plist */,
 			);
 			path = SpaceLaunchsUITests;
+			sourceTree = "<group>";
+		};
+		DAC978FF25C57FED0079BCF1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9790025C5802C0079BCF1 /* Launch.swift */,
+				DAC9792C25C581B30079BCF1 /* Links.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DAC9790825C5806D0079BCF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9790E25C5809E0079BCF1 /* Date+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DAC9791B25C580F40079BCF1 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9791C25C581470079BCF1 /* LaunchNilData.json */,
+				DAC9792425C581600079BCF1 /* LaunchData.json */,
+			);
+			path = mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC9791D25C581470079BCF1 /* LaunchNilData.json in Resources */,
+				DAC9792525C581600079BCF1 /* LaunchData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC9792D25C581B30079BCF1 /* Links.swift in Sources */,
 				DAC978C825C57D370079BCF1 /* ViewController.swift in Sources */,
+				DAC9790125C5802C0079BCF1 /* Launch.swift in Sources */,
 				DAC978C425C57D370079BCF1 /* AppDelegate.swift in Sources */,
+				DAC9790F25C5809E0079BCF1 /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC978DB25C57D380079BCF1 /* SpaceLaunchsTests.swift in Sources */,
+				DAC9791725C580EB0079BCF1 /* ModelDecodeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
