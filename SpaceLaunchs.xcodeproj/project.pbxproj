@@ -25,6 +25,7 @@
 		DAC9795A25C588630079BCF1 /* LaunchsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9795925C588630079BCF1 /* LaunchsApi.swift */; };
 		DAC9795F25C589A80079BCF1 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9795E25C589A80079BCF1 /* NetworkManagerTests.swift */; };
 		DAC9796725C58A3A0079BCF1 /* LaunchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9796625C58A3A0079BCF1 /* LaunchApiTests.swift */; };
+		DAC9798225C58EB00079BCF1 /* LaunchsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9798125C58EB00079BCF1 /* LaunchsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DAC9795925C588630079BCF1 /* LaunchsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchsApi.swift; sourceTree = "<group>"; };
 		DAC9795E25C589A80079BCF1 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		DAC9796625C58A3A0079BCF1 /* LaunchApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchApiTests.swift; sourceTree = "<group>"; };
+		DAC9798125C58EB00079BCF1 /* LaunchsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		DAC978C225C57D370079BCF1 /* SpaceLaunchs */ = {
 			isa = PBXGroup;
 			children = (
+				DAC9798025C58E820079BCF1 /* service */,
 				DAC9794125C587EB0079BCF1 /* api */,
 				DAC9790825C5806D0079BCF1 /* Utils */,
 				DAC978FF25C57FED0079BCF1 /* model */,
@@ -188,6 +191,14 @@
 				DAC9795925C588630079BCF1 /* LaunchsApi.swift */,
 			);
 			path = api;
+			sourceTree = "<group>";
+		};
+		DAC9798025C58E820079BCF1 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DAC9798125C58EB00079BCF1 /* LaunchsService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 				DAC9794B25C5882A0079BCF1 /* NetworkManager.swift in Sources */,
 				DAC9795525C5884E0079BCF1 /* HTTPMethod.swift in Sources */,
 				DAC9794325C588180079BCF1 /* Resource.swift in Sources */,
+				DAC9798225C58EB00079BCF1 /* LaunchsService.swift in Sources */,
 				DAC978C425C57D370079BCF1 /* AppDelegate.swift in Sources */,
 				DAC9790F25C5809E0079BCF1 /* Date+Extensions.swift in Sources */,
 				DAC9795A25C588630079BCF1 /* LaunchsApi.swift in Sources */,
